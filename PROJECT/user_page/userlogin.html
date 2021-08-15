@@ -1,0 +1,138 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700">
+<title>User Form</title>
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>
+<body>
+<div class="header"></div>
+ <input type="checkbox" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner top"></div>
+        <div class="spinner middle"></div>
+        <div class="spinner bottom"></div>
+    </label>
+    <div id="sidebarMenu">
+<ul class="menu">
+<li><a href="https://localhost/PROJECT/user_page/dashboard.html">Dashboard</a></li>
+<li><a href="https://localhost/PROJECT/user_page/submission/mysubmsn.php">My Submissions</a></li>
+<li><a href="http://localhost/PROJECT/user_page/change_upass.html">Change Password</a></li>
+<li><a href="https://localhost/PROJECT/user_page/submission/u_logout.php">Logout</a></li>
+</ul>
+</div>
+<div class="signup-form">
+    <form action="http://localhost/PROJECT/user_page/submission/registration.php" method="post" enctype="multipart/form-data" >
+		<h3 style="text-align:center;">Register For The Contest</h3>
+		<hr>
+        <div class="form-group">
+			<div class="row">
+				<div class="col"><input type="text" class="form-control" name="first_name" placeholder="First Name" required="required"></div>
+				<div class="col"><input type="text" class="form-control" name="last_name" placeholder="Last Name" required="required"></div>
+			</div>
+        </div>
+        <div class="form-group">
+        	<input type="email" class="form-control" name="email" placeholder="Email" required="required">
+        </div>
+        <div class="form-group">
+             <input class="form-control" type="text" name="add_1" required placeholder="Address Line 1"><br>
+                <input class="form-control" type="text" name="add_2" required placeholder="Address Line 2"><br>
+                <input class="form-control" type="text" name="city" required placeholder="Town / City"><br>
+                <input class="form-control" type="text" name="state" required placeholder="County / State"><br>
+                <input class="form-control" type="text" name="pincode" required placeholder="Zip / Postal Code"><br>
+                <select class="form-control" name="country" id="country">
+    <option value="select">---Select Country---</option>
+    <option value="Afganisthan">Afganisthan</option>
+    <option value="Albania">Albania</option>
+    <option value="America">America</option>
+    <option value="India">India</option>
+    <option value="Samoa">Samoa</option>
+    <option value="Antarctica">Antarctica</option>
+    <option value="Australia">Australia</option>
+    <option value="Bhutan">Bhutan</option>
+    <option value="Canada">Canada</option>
+    <option value="Africa">Africa</option>
+    <option value="China">China</option>
+    <option value="Hong Kong">Hong Kong</option>
+    <option value="New Zealand">New Zealand</option>
+    <option value="United Kingdom">United Kingdom</option>
+    </select><br>
+    <select class="form-control" name="category" id="category">
+    <option value="select">---Select Category---</option>
+    <option value="Fashion Photography Contest">Fashion Photography Contest</option>
+    <option value="Travel Photography Contest">Travel Photography Contest</option>
+    <option value="Wildlife Photography Contest">Wildlife Photography Contest</option>
+    <option value="Food Photography Contest">Food Photography Contest</option>
+    <option value="Architecture Photography Contest">Architecture Photography Contest</option>
+    <option value="Potrait Photography Contest">Potrait Photography Contest</option>
+    <option value="Time Lapse Photography Contest">Time Lapse Photography Contest</option>
+    </select><br>
+
+		<div class="form-group">
+            <input type="number"  class="form-control" name="contact" value="" placeholder="Contact Number" required>
+        </div>
+
+
+                 <div class="form-group">
+    <label for="files" class="btn">Upload Image</label>
+    <input class="form-control" name="upload_img" type="file" value=""  id="files"><br>
+    <p>Upload your image at 72dpi in PNG or JPEG format. Max. file size: 4MB</p>
+
+        </div>
+        <div class="form-group">
+			<label class="form-check-label"><input type="checkbox" required="required"> I accept the <a href="#">Terms of Use</a> &amp; <a href="#">Privacy Policy</a></label>
+		</div>
+
+		<div class="form-group">
+            <button type="submit" name="save" class="btn btn-success btn-lg btn-block">Register Now</button>
+            <link rel="stylesheet" href="ThankYou.html">
+</div>
+</form>
+
+
+<div class="text">
+			<br><h3>Terms & Conditions</h3>
+
+                <h4>Entries</h4>
+                <ul>
+                <li>To enter, submit a previously unpublished image on the theme of ‘Food’</li>
+                <li>Each entry must be the original work of the person submitting it. There must be only one image per entry. No stock photography is allowable.</li>
+                <li>Entry fee: €10 for entries submitted on or before 31 May 2021 or €15 for entries submitted between 1 June and 31 August 2021. Entries will not be accepted after the closing date. </li>
+                <li>There is no limit to the number of entries you can submit.</li>
+                <li>There is no age limit for entrants.</li>
+                <li>Composite photography is allowable.</li>
+                <li>Please do not add any watermarks to your entries as the judging is anonymous.</li>
+                <li>Each entry must have been captured on or after 1 January, 2019.</li>
+                <li>Prize winners will be selected by a panel of independent judges and their decision is final.</li>
+               <li>Once announced, all entrants will be notified of the result by email. Finalists will be notified by email or telephone.</li>
+                <li>By submitting your entry and paying the registration fee, you agree to all of the terms and conditions listed here.</li>
+                <br><h4>Technical Specifications</h4>
+
+                <li>Please ensure that your entries are submitted as electronic files, at 72dpi, in JPEG or PNG format, and a maximum size of 4MB</li>
+                <li>All finalists will be required to re-submit the originals in RAW, JPEG or TIFF format at 300dpi.</li>
+                <br><h4>Rights</h4>
+
+                <li>All photographers retain copyright of their work.</li>
+                <li>All entrants agree to the storage of their images in electronic form for the purpose of judging the competition and the private distribution of those images as required to complete the judging process.</li>
+                <li>The photographer warrants that the rights (of any kind) to the photograph have not previously been sold or granted to any third party </li>
+                <li>The finalist grants Anthology the right to use the images in electronic form or in print for the specific purpose of promoting Anthology and its Awards without restriction in any media.</li>
+                <li>Anthology agrees that the images will not be made available for download on any of its websites at high resolution and that all images used will be credited to the photographer. To further protect any images against misuse by third parties Anthology will insert a digital watermark to images published online. Anthology will not be responsible for unauthorised use of any image by a third party.</li>
+                <li>Electronic files sent as attachments will not be returned and Anthology accepts no responsibility for submissions in any other form. Prints or physical media sent as submissions will not be returned.</li>
+            </ul>
+</div>
+</div>
+</div>
+
+</body>
+</html>

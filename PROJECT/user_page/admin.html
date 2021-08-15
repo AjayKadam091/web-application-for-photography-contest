@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Admin Panel</title>
+<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<style>
+    body {
+        margin: 0px;
+        border: 0px;
+    }
+#header {
+    width: 100%;
+    height: 150px;
+    background: black;
+    color: white;
+}
+#data {
+    height: 700px;
+    background: linear-gradient(110deg, red, pink);
+    color: black;
+    font-family: Times New Roman;
+    font-size: 25px;
+}
+#adminlogo {
+    background: white;
+    border-radius: 50px;
+}
+select {
+  text-align: center;
+  text-align-last: center;
+}
+option {
+  text-align: left;
+}
+#category {
+    position: center;
+    z-index: 10;
+    width: 450px;
+    height: 50px;
+    border: 1px solid #000;
+    font-family: Times New Roman;
+    font-size: 20px;
+}
+
+
+</style>
+</head>
+<body>
+<div id="header">
+<center><img src="admin_icon.png" alt="adminlogo" id="adminlogo" height="80" width="80"></center><p style="text-align: center;">This is Admin Panel, Please proceed with caution!</p>
+ <input type="checkbox" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner top"></div>
+        <div class="spinner middle"></div>
+        <div class="spinner bottom"></div>
+    </label>
+    <div id="sidebarMenu">
+<ul class="menu">
+<li><a href="http://localhost/PROJECT/user_page/admin.html">Dashboard</a></li>
+<li><a href="https://localhost/PROJECT/user_page/submission/demo.php">Participants</a></li>
+<li><a href="http://localhost/PROJECT/user_page/vote-count.html">Votes</a> </li>
+<li><a href="http://localhost/PROJECT/user_page/change_apass.html">Change Password</a></li>
+<li><a href="http://localhost/PROJECT/user_page/index.html">Logout</a></li>
+</ul>
+</div>
+</div>
+
+<div id="data"><br>
+<br>
+
+      <form class="" action="https://localhost/PROJECT/user_page/submission/display.php" method="post" enctype="multipart/form-data">
+
+        <center><select class="form-control" name="category" id="category" style="text-align:center"></center>
+    <option value="select">---Select Category---</option>
+    <option value="Fashion Photography Contest">Fashion Photography Contest</option>
+    <option value="Travel Photography Contest">Travel Photography Contest</option>
+    <option value="Wildlife Photography Contest">Wildlife Photography Contest</option>
+    <option value="Food Photography Contest">Food Photography Contest</option>
+    <option value="Architecture Photography Contest">Architecture Photography Contest</option>
+    <option value="Potrait Photography Contest">Potrait Photography Contest</option>
+    <option value="Time Lapse Photography Contest">Time Lapse Photography Contest</option>
+    </select><br>
+    <button type="submit" class="btn btn-info" style="width:200px; height:50px;" name="show">SUBMIT</button>
+      </form>
+
+
+
+</div>
+</body>
+</html>

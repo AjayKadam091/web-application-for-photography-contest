@@ -1,0 +1,77 @@
+*
+{
+      padding: 0;
+      margin: 0;
+      
+}
+body {
+	color: #fff;
+	background: linear-gradient(110deg, red, pink);
+        background-size: cover;
+        background-position: center;
+        box-sizing: border-box;
+	font-family: sans-serif;
+}
+.menu-bar
+{
+        background: #6D6968;
+        text-align: center;      
+}
+.menu-bar ul
+{
+        display: inline-flex;
+        lost-style: none;
+        list-style-type: none;
+        color: #fff;
+}
+.menu-bar ul li
+{
+         width: 120px;
+         margin: 15px;
+         padding: 15px;
+}
+.menu-bar ul li a
+{
+        text-decoration: none;
+        color: #fff;
+}
+.active, .menu-bar ul li:hover
+{
+        background: #000;
+        border-radius: 3px;
+}
+.sub-menu-1
+{
+     display: none;
+}
+.menu-bar ul li:hover .sub-menu-1
+{
+      display: block;
+      position: absolute;
+      background: #6D6968;
+      margin-top: 15px;
+      margin-left: -15px;
+}
+.menu-bar ul li:hover .sub-menu-1 ul
+{
+     display: block;
+     margin: 10px;
+}
+.sub-menu-2
+{
+     display: none;
+     padding: 15px;
+}
+.menu-bar ul li:hover .sub-menu-2
+{
+      display: block;
+      position: relative;
+      background: #6D6968;
+      margin-top: 1px;
+      margin-left: -1px;
+}
+.menu-bar ul li:hover .sub-menu-2 ul
+{
+     display: block;
+     margin: 2px;
+}

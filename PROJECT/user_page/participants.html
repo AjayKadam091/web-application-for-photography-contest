@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Admin Panel</title>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    body {
+        margin: 0px;
+        border: 0px;
+    }
+#header {
+    width: 100%;
+    height: 150px;
+    background: black;
+    color: white;
+}
+#data {
+    height: 700px;
+    background: linear-gradient(110deg, red, pink);
+    color: black;
+    font-family: Times New Roman;
+    font-size: 25px;
+}
+#adminlogo {
+    background: white;
+    border-radius: 50px;
+}
+</style>
+</head>
+<body>
+<div id="header">
+<center><img src="admin_icon.png" alt="adminlogo" id="adminlogo" height="80" width="80"></center><p style="text-align: center;">This is Admin Panel, Please proceed with caution!</p>
+ <input type="checkbox" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner top"></div>
+        <div class="spinner middle"></div>
+        <div class="spinner bottom"></div>
+    </label>
+    <div id="sidebarMenu">
+<ul class="menu">
+<li><a href="http://localhost/PROJECT/user_page/admin.html">Dashboard</a></li>
+<li><a href="https://localhost/PROJECT/user_page/submission/demo.php">Participants</a></li>
+<li><a href="http://localhost/PROJECT/user_page/vote-count.html">Votes</a> </li>
+<li><a href="http://localhost/PROJECT/user_page/change_apass.html">Change Password</a></li>
+<li><a href="http://localhost/PROJECT/user_page/index.html">Logout</a></li>
+</ul>
+</div>
+</div>
+
+<div id="data"><br>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Signup</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="style.css">
+        <style>
+    @import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+    </style>
+    </head>
+    <body>
+
+
+      <div class="header"></div>
+       <input type="checkbox" id="openSidebarMenu">
+          <label for="openSidebarMenu" class="sidebarIconToggle">
+              <div class="spinner top"></div>
+              <div class="spinner middle"></div>
+              <div class="spinner bottom"></div>
+          </label>
+          <div id="sidebarMenu">
+      <ul class="menu">
+      <li><a href="http://localhost/PROJECT/user_page/admin.html">Dashboard</a></li>
+      <li><a href="https://localhost/PROJECT/user_page/submission/demo.php">Participants</a></li>
+      <li><a href="http://localhost/PROJECT/user_page/vote-count.html">Votes</a> </li>
+      <li><a href="http://localhost/PROJECT/user_page/change_apass.html">Change Password</a></li>
+      <li><a href="http://localhost/PROJECT/user_page/index.html">Logout</a></li>
+      </ul>
+      </div>
+
+    <div class="container">
+
+              <div class="card">
+              <div class="inner-box" id="card">
+              <div  id="card-back">
+                    <h2 style="color:white;">CHANGE PASSWORD</h2>
+                  <form class="" action="submission\change-apass.php" method="post">
+                    <input type="password" name="curpass" class="input-box"
+                    placeholder="Old Password" required>
+                      <input type="password" name="newpass" class="input-box"
+                      placeholder="New Password" required>
+                      <input type="password" name="conpass" class="input-box1"
+                      placeholder="Confirm Password" required>
+
+                      <button type="submit" name="save" class="submit-btn">SUBMIT</button>
+                  </form>
+              </div>
+
+              </div>
+              </div>
+
+    </div>
+
+
+
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    </body>
+</html>
